@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Diligência Dedicada® — 1º Ofício de Alegre/ES — Data Secure</title>
+    <meta name="description" content="Proposta Exclusiva para o Cartório do 1º Ofício de Alegre/ES. Dossiê de Compliance Digital e Plano de Ação Estratégico. Provimento CNJ 213/2026. Data Secure®.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Programa Diligência Dedicada® — 1º Ofício de Alegre/ES — Data Secure">
+    <meta property="og:description" content="Proposta Exclusiva para o Cartório do 1º Ofício de Alegre/ES. Dossiê de Compliance Digital. Provimento CNJ 213/2026.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth}
+        :root{
+            --navy:#091345;--blue:#3478D1;--gold:#FFC524;--gold-dark:#E0A800;
+            --light:#FAF9F9;--white:#FFF;
+            --s50:#F8FAFC;--s100:#F1F5F9;--s200:#E2E8F0;--s300:#CBD5E1;
+            --s600:#475569;--s700:#334155;--s800:#1E293B;--s900:#0F172A;
+            --red:#DC2626;--green:#16A34A;--emerald:#10B981;--purple:#7C3AED;--rose:#E11D48;--indigo:#4F46E5;
+            --font:'Inter',system-ui,sans-serif;--serif:'Merriweather',Georgia,serif;
+            --tr:0.3s cubic-bezier(.4,0,.2,1);
+        }
+        body{font-family:var(--font);color:var(--s900);background:var(--white);-webkit-font-smoothing:antialiased;line-height:1.6;font-size:0.92rem;text-align:justify}
+        h1,h2,h3,h4,h5,h6{font-family:var(--serif);line-height:1.3;text-align:left}
+        .sh h2,.hero,.hero *,footer,footer *,.cta-box,.cta-box *{text-align:center}
+        ::selection{background:var(--gold);color:var(--navy)}
+        img{max-width:100%;height:auto;display:block}
+        a{color:var(--blue);text-decoration:none}
+        a:hover{text-decoration:underline}
+        .container{max-width:1140px;margin:0 auto;padding:0 1.5rem}
+        .container-sm{max-width:860px;margin:0 auto;padding:0 1.5rem}
+        .sec{padding:4.5rem 0}
+        .bg-w{background:var(--white)}.bg-l{background:var(--s50)}.bg-d{background:linear-gradient(135deg,var(--navy),#0D1B4A);color:var(--white)}
+        .grad-text{background:linear-gradient(135deg,var(--gold),#FFD666,var(--gold-dark));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .grad-div{height:3px;background:linear-gradient(to right,transparent,var(--gold),transparent);border:none;margin:0.75rem 0 1.5rem}
+        .sh{margin-bottom:2.5rem}
+        .sh h2{font-size:clamp(1.5rem,3.2vw,2.2rem);margin-bottom:0.4rem}
+        .sh p{font-size:0.95rem;color:var(--s600);max-width:680px;text-align:justify;margin:0 auto}
+        .grid{display:grid;gap:1.5rem}
+        .g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+        .g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+        @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes borderSlide{0%{left:-100%}50%,100%{left:100%}}
+        .anim{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+        .anim.vis{opacity:1;transform:translateY(0)}
+
+        /* HERO */
+        .hero{background:linear-gradient(135deg,var(--navy) 0%,#0D1B4A 50%,var(--navy) 100%);position:relative;overflow:hidden;padding:4rem 1.5rem;text-align:center;color:var(--white)}
+        .hero::before{content:'';position:absolute;top:-50%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(255,197,36,.12) 0%,transparent 70%);border-radius:50%;filter:blur(40px)}
+        .hero::after{content:'';position:absolute;bottom:-30%;left:-5%;width:400px;height:400px;background:radial-gradient(circle,rgba(52,120,209,.1) 0%,transparent 70%);border-radius:50%;filter:blur(40px)}
+        .hero-c{position:relative;z-index:2}
+        .hero-logo{width:260px;margin:0 auto 1.5rem;filter:drop-shadow(0 8px 20px rgba(0,0,0,.3))}
+        .hero h1{font-size:clamp(1.6rem,4vw,2.6rem);font-weight:700;margin-bottom:.75rem;letter-spacing:-.02em;animation:fadeUp .8s .2s ease both}
+        .hero p{font-family:var(--font);font-size:clamp(.9rem,2vw,1.15rem);color:rgba(255,255,255,.75);max-width:660px;margin:0 auto;font-weight:300;animation:fadeUp .8s .35s ease both}
+
+        /* BUBBLE CARDS */
+        .bubble{background:var(--white);border:1px solid var(--s200);border-radius:12px;padding:1.1rem 1.25rem;display:flex;align-items:flex-start;gap:.75rem;transition:transform var(--tr),box-shadow var(--tr)}
+        .bubble:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.06)}
+        .bubble-icon{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;color:var(--navy);font-weight:700;font-size:.85rem}
+        .bubble p{font-size:.88rem;color:var(--s700);line-height:1.6;text-align:justify}
+
+        /* ALERT */
+        .alert-d{background:#FEF2F2;border-left:4px solid var(--red);border-radius:8px;padding:1.25rem 1.5rem;margin-top:1.5rem}
+        .alert-d strong{display:block;color:#991B1B;font-size:1rem;margin-bottom:.3rem}
+        .alert-d p{color:#7F1D1D;font-size:.88rem;font-weight:500;text-align:justify}
+
+        /* ANCHOR/QUOTE CARDS */
+        .qcard{padding:1.75rem;border-radius:12px;background:var(--white);border:1px solid var(--s200);transition:transform var(--tr),box-shadow var(--tr)}
+        .qcard:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,.06)}
+        .qcard blockquote{font-style:italic;color:var(--s700);padding-left:1rem;border-left:4px solid;margin-top:.75rem;line-height:1.7;font-size:.9rem;text-align:justify}
+
+        /* ICON ROW */
+        .icon-row{display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem}
+        .ic{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+        .ic svg{width:24px;height:24px;fill:none;stroke:var(--white);stroke-width:2}
+
+        /* GOLDEN RULE */
+        .gr{background:linear-gradient(135deg,#FFFBEB,#FEF3C7);border:2px solid var(--gold);border-radius:10px;padding:1.5rem 1.75rem;margin-top:2.5rem}
+        .gr h3{font-family:var(--font);font-size:1rem;font-weight:600;color:var(--navy);margin-bottom:.4rem}
+        .gr p{font-size:.95rem;font-weight:600;color:var(--s800);line-height:1.6;text-align:justify}
+
+        /* FRENTE CARDS */
+        .fc{padding:1.75rem;border-radius:12px;background:var(--white);border:2px solid;transition:transform var(--tr),box-shadow var(--tr)}
+        .fc:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.06)}
+        .fc-num{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--white);font-size:.9rem;flex-shrink:0}
+
+        /* CARD GENERICO */
+        .card{padding:1.75rem;border-radius:12px;background:var(--white);border:1px solid var(--s200);transition:transform var(--tr),box-shadow var(--tr)}
+        .card:hover{transform:translateY(-5px);box-shadow:0 16px 32px rgba(0,0,0,.07)}
+        .card-t{font-family:var(--font);font-size:1.05rem;font-weight:600;margin-bottom:.4rem}
+        .card-p{font-size:.88rem;color:var(--s600);line-height:1.6;text-align:justify}
+
+        /* SIMULADOR */
+        .sim-section{padding:3.5rem 0;background:var(--s50)}
+        .sim-container{max-width:860px;margin:0 auto;padding:0 1.5rem}
+        .sim-title{font-family:var(--serif);font-size:clamp(1.5rem,3.2vw,2.2rem);color:var(--navy);margin-bottom:1.5rem;text-align:center}
+        .sim-panel{background:var(--white);border:1px solid var(--s200);border-radius:14px;padding:1.75rem;margin-bottom:1.5rem;box-shadow:0 4px 12px rgba(0,0,0,.04)}
+        .sim-panel-title{font-family:var(--font);font-size:1.05rem;font-weight:700;color:var(--s800);padding-bottom:.75rem;border-bottom:2px solid var(--s200);margin-bottom:1.25rem}
+        .sim-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+        @media(max-width:640px){.sim-grid{grid-template-columns:1fr}}
+        .sim-col-title{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.75rem;padding:.3rem .6rem;border-radius:4px;display:inline-block}
+        .sim-col-title.critico{color:#991B1B;background:#FEF2F2;border:1px solid #FECACA}
+        .sim-col-title.operacional{color:#1E40AF;background:#EFF6FF;border:1px solid #BFDBFE}
+        .vendor-row{border-radius:8px;padding:.75rem 1rem;margin-bottom:.5rem;transition:background var(--tr)}
+        .vendor-row.critico{background:#FEF2F2;border:1px solid #FECACA}
+        .vendor-row.operacional{background:#EFF6FF;border:1px solid #BFDBFE}
+        .vendor-row label{display:flex;align-items:center;gap:.5rem;cursor:pointer;font-size:.85rem;font-weight:600;color:var(--s800)}
+        .vendor-row input[type="checkbox"]{width:16px;height:16px;accent-color:var(--gold);cursor:pointer}
+        .vendor-meta{display:flex;align-items:center;gap:.4rem;margin-top:.4rem;margin-left:1.6rem;font-size:.78rem;color:var(--s600)}
+        .vendor-meta input[type="number"]{width:52px;text-align:center;border:1px solid var(--s300);border-radius:4px;padding:.2rem .3rem;font-size:.78rem;font-family:var(--font)}
+        .vendor-val{font-weight:700;color:var(--s800)}
+
+        /* Totalização */
+        .sim-total-row{display:flex;justify-content:space-between;align-items:center;padding:.5rem 0;font-size:.9rem}
+        .sim-total-row .label{color:var(--s700)}
+        .sim-total-row .value{font-weight:700;color:var(--s900)}
+        .sim-total-final{display:flex;justify-content:space-between;align-items:center;padding:.75rem 0;border-top:2px solid var(--s200);margin-top:.25rem}
+        .sim-total-final .label{font-weight:700;color:var(--s900);font-size:1rem}
+        .sim-total-final .value{font-size:1.3rem;font-weight:800;color:var(--gold-dark)}
+
+        /* Carrinho */
+        .cart-item{display:flex;align-items:center;justify-content:space-between;padding:.85rem 1.1rem;border-radius:10px;margin-bottom:.5rem;transition:background var(--tr)}
+        .cart-item.obrigatorio{background:linear-gradient(135deg,#FFFBEB,#FEF3C7);border:2px solid var(--gold)}
+        .cart-item.opcional{background:var(--white);border:1px solid var(--s200);cursor:pointer}
+        .cart-item.opcional:hover{background:var(--s50)}
+        .cart-item label{display:flex;align-items:center;gap:.65rem;cursor:pointer;flex:1;min-width:0}
+        .cart-item input[type="checkbox"]{width:18px;height:18px;accent-color:var(--gold);cursor:pointer;flex-shrink:0}
+        .cart-item .cart-nome{font-size:.88rem;font-weight:600;color:var(--s800)}
+        .cart-item .cart-desc{font-size:.75rem;color:var(--s600);margin-top:.1rem}
+        .cart-item .cart-tag{font-size:.65rem;font-weight:700;color:var(--gold-dark);background:rgba(255,197,36,.2);padding:.15rem .45rem;border-radius:4px;margin-left:.4rem}
+        .cart-item .cart-preco{font-size:.9rem;font-weight:700;color:var(--blue);white-space:nowrap;margin-left:1rem;flex-shrink:0}
+
+        /* Resumo escuro */
+        .sim-dark{background:linear-gradient(135deg,var(--navy),var(--s800));border-radius:12px;padding:1.5rem;color:var(--white);margin-top:1rem}
+        .sim-dark-row{display:flex;justify-content:space-between;align-items:center;padding:.4rem 0;font-size:.88rem}
+        .sim-dark-row .l{color:rgba(255,255,255,.6)}
+        .sim-dark-row .v{font-weight:600}
+        .sim-dark-row.gold .l{color:var(--gold);font-weight:600}
+        .sim-dark-row.gold .v{color:var(--gold);font-weight:700}
+        .sim-dark-divider{border-top:1px solid rgba(255,255,255,.1);margin:.4rem 0}
+        .sim-dark-total{display:flex;justify-content:space-between;align-items:flex-end;padding:.6rem 0}
+        .sim-dark-total .l{font-weight:700;font-size:1rem}
+        .sim-dark-total .v{font-size:1.6rem;font-weight:800;color:var(--gold)}
+        .sim-dark-sub{font-size:.75rem;color:rgba(255,255,255,.4);margin-top:.15rem}
+
+        /* Parcelamento */
+        .parc-input-group{display:flex;align-items:center;gap:.75rem;margin:.75rem 0}
+        .parc-input-group label{font-size:.9rem;font-weight:600;color:var(--s800)}
+        .parc-input{width:72px;text-align:center;font-size:1.1rem;font-weight:700;border:2px solid var(--gold);border-radius:8px;padding:.5rem;font-family:var(--font);color:var(--navy)}
+        .parc-input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(52,120,209,.15)}
+        .parc-hint{font-size:.8rem;color:var(--s600)}
+
+        .sim-resumo-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;text-align:center;margin-bottom:1rem}
+        .sim-resumo-item{padding:.75rem}
+        .sim-resumo-item .label{font-size:.75rem;color:rgba(255,255,255,.5);margin-bottom:.25rem}
+        .sim-resumo-item .value{font-size:1.2rem;font-weight:700}
+        .sim-resumo-item .value.gold{color:var(--gold)}
+        .sim-resumo-consolidado{border-top:1px solid rgba(255,255,255,.1);padding-top:1rem;text-align:center}
+        .sim-resumo-consolidado .label{font-size:.78rem;color:rgba(255,255,255,.5)}
+        .sim-resumo-consolidado .total{font-size:1.8rem;font-weight:800;color:var(--gold);margin:.25rem 0}
+        .sim-resumo-consolidado .detail{font-size:.8rem;color:rgba(255,255,255,.45)}
+
+        .sim-alerta{border-radius:8px;padding:1rem 1.25rem;margin-top:1rem;font-size:.82rem;line-height:1.5;display:none}
+        .sim-alerta.info{background:#EFF6FF;border-left:4px solid var(--blue);color:#1E40AF}
+        .sim-alerta.warn{background:linear-gradient(135deg,#FFFBEB,#FEF3C7);border-left:4px solid var(--gold);color:#92400E}
+        .sim-alerta strong{display:block;margin-bottom:.2rem}
+
+        /* Botões de ação */
+        .sim-actions{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem}
+        @media(max-width:540px){.sim-actions{grid-template-columns:1fr}}
+        .sim-btn{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.25rem;border-radius:10px;font-weight:700;font-size:.88rem;font-family:var(--font);cursor:pointer;transition:transform var(--tr),box-shadow var(--tr);text-decoration:none;border:none}
+        .sim-btn:hover{transform:translateY(-2px);text-decoration:none}
+        .sim-btn.primary{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);box-shadow:0 4px 12px rgba(255,197,36,.3)}
+        .sim-btn.secondary{background:var(--white);color:var(--blue);border:2px solid var(--blue)}
+        .sim-btn.secondary:hover{background:var(--blue);color:var(--white)}
+        .sim-btn svg{width:18px;height:18px;flex-shrink:0}
+
+        /* TIMELINE */
+        .tl{position:relative;padding-left:36px}
+        .tl::before{content:'';position:absolute;left:13px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold),var(--blue),transparent)}
+        .tl-item{position:relative;margin-bottom:1.5rem}
+        .tl-item::before{content:'';position:absolute;left:-36px;top:.2rem;width:28px;height:28px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));border-radius:50%;border:3px solid var(--white);box-shadow:0 2px 6px rgba(0,0,0,.1)}
+        .tl-c{background:var(--white);border:1px solid var(--s200);border-radius:10px;padding:1.25rem;transition:box-shadow var(--tr)}
+        .tl-c:hover{box-shadow:0 6px 16px rgba(0,0,0,.06)}
+        .tl-c.hl{border:2px solid var(--gold);background:linear-gradient(135deg,#FFFBEB,#FEF3C7)}
+        .tl-c h3{font-family:var(--font);font-size:.95rem;font-weight:600;margin-bottom:.15rem}
+        .tl-c .ph{font-size:.78rem;color:var(--blue);font-weight:600;margin-bottom:.4rem}
+        .tl-c p{font-size:.85rem;color:var(--s600);text-align:justify}
+        .tl-par{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem;margin-left:36px}
+        @media(max-width:768px){.tl-par{grid-template-columns:1fr}}
+
+        /* CTA */
+        .cta-box{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 2rem;border-radius:14px;background:linear-gradient(135deg,var(--navy),var(--s800));border:2px solid rgba(255,197,36,.35);text-decoration:none;color:var(--white);overflow:hidden;transition:transform var(--tr),box-shadow var(--tr);cursor:pointer;max-width:700px;margin:0 auto}
+        .cta-box:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(255,197,36,.2);text-decoration:none}
+        .cta-box::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,197,36,.12),transparent);animation:borderSlide 3s infinite}
+        .cta-badge{position:absolute;top:.75rem;right:.75rem;background:var(--gold);color:var(--navy);font-size:.65rem;font-weight:700;padding:.25rem .65rem;border-radius:999px;text-transform:uppercase}
+        .cta-ic{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-dark));display:flex;align-items:center;justify-content:center;margin-bottom:1rem;transition:transform var(--tr),box-shadow var(--tr)}
+        .cta-box:hover .cta-ic{transform:scale(1.1);box-shadow:0 0 24px rgba(255,197,36,.4)}
+
+        /* MODAL / STEPS */
+        .steps-panel{display:none;background:rgba(9,19,69,.96);border:1px solid rgba(255,197,36,.2);border-radius:12px;padding:2rem;margin-top:1.5rem;max-width:700px;margin-left:auto;margin-right:auto;text-align:left;color:var(--white)}
+        .steps-panel.open{display:block;animation:fadeUp .4s ease}
+        .step{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.25rem;padding-bottom:1.25rem;border-bottom:1px solid rgba(255,255,255,.06)}
+        .step:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+        .step-n{width:36px;height:36px;border-radius:50%;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;flex-shrink:0}
+        .step h4{font-family:var(--font);font-size:.95rem;font-weight:600;margin-bottom:.2rem}
+        .step p{font-size:.83rem;color:rgba(255,255,255,.65);text-align:justify}
+        .steps-cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:var(--navy);font-weight:700;font-size:.85rem;padding:.7rem 1.5rem;border-radius:999px;text-decoration:none;margin-top:1rem;transition:transform var(--tr)}
+        .steps-cta:hover{transform:scale(1.05);text-decoration:none}
+
+        /* ABOUT */
+        .about-photo{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid var(--gold);box-shadow:0 12px 32px rgba(0,0,0,.15);margin:0 auto 1.25rem}
+
+        /* GLASS CARD for lab */
+        .sim-glass{background:rgba(9,19,69,.94);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:2.25rem;color:var(--white)}
+
+        /* FOOTER */
+        footer{background:var(--navy);color:rgba(255,255,255,.55);padding:2.5rem 1.5rem;text-align:center;font-size:.82rem}
+        footer a{color:var(--gold);text-decoration:none}
+        footer a:hover{text-decoration:underline}
+
+        /* CONTACT LINKS */
+        .contact-links{display:flex;gap:1.25rem;justify-content:center;flex-wrap:wrap;margin-top:1.25rem}
+        .contact-links a{display:inline-flex;align-items:center;gap:.4rem;color:var(--white);font-size:.82rem;font-weight:500;text-decoration:none;transition:opacity var(--tr);background:rgba(255,255,255,.08);padding:.45rem .9rem;border-radius:999px;border:1px solid rgba(255,255,255,.12)}
+        .contact-links a:hover{opacity:.8;text-decoration:none}
+        .contact-links a svg{width:16px;height:16px;flex-shrink:0}
+
+        @media(max-width:640px){.sec{padding:3rem 0}.g2,.g3{grid-template-columns:1fr}}
+
+        /* ===================== PRINT PREMIUM ===================== */
+        @media print{
+            /* Forçar cores */
+            *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important}
+
+            /* Página A4 margens profissionais */
+            @page{size:A4 portrait;margin:14mm 14mm 16mm 14mm}
+
+            /* Base tipográfica */
+            html{font-size:10pt}
+            body{font-size:9pt;color:#1a1a1a;background:#fff!important;line-height:1.5;text-align:justify}
+
+            /* Animações off */
+            .anim{opacity:1!important;transform:none!important;transition:none!important}
+
+            /* Ocultar interativos */
+            .sim-btn,.steps-cta,.cta-box,.contact-links,.sim-section,
+            #laboratorio,.steps-panel,#toggleSteps,.cta-badge,
+            .hero::before,.hero::after{display:none!important}
+
+            /* Espaçamentos compactos — fluxo contínuo */
+            .sec{padding:.9rem 0!important}
+            .container,.container-sm{max-width:100%;padding:0!important}
+            .sh{margin-bottom:.7rem}
+            .sh p{font-size:.85rem}
+
+            /* Hero compacto — NÃO é capa de página inteira */
+            .hero{
+                background:var(--navy)!important;
+                padding:1.4rem 1.5rem 1.2rem!important;
+            }
+            .hero h1{font-size:18pt!important;margin-bottom:.3rem}
+            .hero p{font-size:9.5pt!important;color:rgba(255,255,255,.85)!important;margin-bottom:.5rem!important}
+            .hero-logo{max-width:140px!important;margin-bottom:.6rem!important}
+            .hero .grad-text{-webkit-text-fill-color:var(--gold)!important;color:var(--gold)!important}
+            .hero a[href*="wa.me"]{display:none!important}
+            .hero div[style*="inline-block"]{margin-bottom:.6rem!important}
+
+            /* Títulos */
+            h2{font-size:13pt!important;color:var(--navy)!important;page-break-after:avoid}
+            h3{font-size:10pt!important;page-break-after:avoid}
+            h4{font-size:9pt!important;page-break-after:avoid}
+
+            /* Divisor dourado fino */
+            .grad-div{background:var(--gold)!important;height:1.5px!important;margin:.3rem 0 .5rem!important}
+
+            /* Cards — compactos, sem sombra, não quebram */
+            .card,.qcard,.fc,.bubble{
+                box-shadow:none!important;
+                transform:none!important;
+                border:1px solid #ccc!important;
+                border-radius:4px!important;
+                page-break-inside:avoid;
+                margin-bottom:.35rem!important;
+            }
+            .card{padding:.7rem .9rem!important}
+            .bubble{padding:.6rem .8rem!important}
+            .fc{padding:.8rem 1rem!important}
+
+            /* Ícones — preservar cor */
+            .ic,.bubble-icon,.fc-num{
+                -webkit-print-color-adjust:exact!important;
+                print-color-adjust:exact!important;
+            }
+            .ic{width:32px!important;height:32px!important;margin-bottom:.4rem!important}
+            .ic svg{width:16px!important;height:16px!important}
+            .bubble-icon{width:28px!important;height:28px!important;font-size:.75rem!important}
+
+            /* Grids lado a lado */
+            .grid.g2{grid-template-columns:1fr 1fr!important;gap:.6rem!important}
+            .grid.g3{grid-template-columns:1fr 1fr 1fr!important;gap:.5rem!important}
+            .grid{gap:.5rem!important}
+
+            /* Card-t e card-p */
+            .card-t{font-size:.9rem!important;margin-bottom:.2rem!important}
+            .card-p{font-size:.8rem!important;line-height:1.45!important}
+
+            /* Golden Rule compacto */
+            .gr{
+                border:1.5px solid var(--gold)!important;
+                background:#FFFBEB!important;
+                page-break-inside:avoid;
+                padding:.8rem 1rem!important;
+                margin-top:1rem!important;
+            }
+            .gr h3{font-size:.85rem!important;margin-bottom:.15rem!important}
+            .gr p{font-size:.85rem!important}
+
+            /* Alert compacto */
+            .alert-d{
+                background:#FEF2F2!important;
+                border-left:3px solid var(--red)!important;
+                page-break-inside:avoid;
+                padding:.7rem 1rem!important;
+                margin-top:.8rem!important;
+            }
+            .alert-d strong{font-size:.85rem!important;margin-bottom:.15rem!important}
+            .alert-d p{font-size:.8rem!important}
+
+            /* Blockquotes */
+            .qcard blockquote{font-size:.8rem!important;line-height:1.5!important;margin-top:.4rem!important;padding-left:.7rem!important}
+            .qcard{padding:1rem!important}
+            .icon-row{margin-bottom:.3rem!important}
+
+            /* Entregáveis — mais compactos */
+            .fc-num{width:28px!important;height:28px!important;font-size:.75rem!important}
+            #como-funciona .card h4{font-size:.85rem!important;margin-bottom:.15rem!important}
+            #como-funciona .card p{font-size:.78rem!important;line-height:1.4!important}
+            #como-funciona .card{padding:.6rem .8rem!important}
+
+            /* Info boxes */
+            div[style*="background:#EFF6FF"]{
+                background:#EFF6FF!important;
+                border-left:3px solid var(--blue)!important;
+                page-break-inside:avoid;
+                padding:.6rem .9rem!important;
+                margin-bottom:.8rem!important;
+            }
+            div[style*="background:#EFF6FF"] p{font-size:.8rem!important}
+
+            /* Timeline compacta */
+            .tl{padding-left:28px!important}
+            .tl::before{left:10px!important;width:1.5px!important;background:var(--gold)!important}
+            .tl-item{margin-bottom:.8rem!important}
+            .tl-item::before{left:-28px!important;width:22px!important;height:22px!important;background:var(--gold)!important;border-color:#fff!important}
+            .tl-c{padding:.7rem .9rem!important;page-break-inside:avoid}
+            .tl-c h3{font-size:.85rem!important}
+            .tl-c .ph{font-size:.7rem!important;margin-bottom:.2rem!important}
+            .tl-c p{font-size:.78rem!important}
+            .tl-c.hl{background:#FFFBEB!important;border:1.5px solid var(--gold)!important}
+            .tl-par{grid-template-columns:1fr 1fr!important;gap:.5rem!important;margin-left:28px!important;margin-bottom:.8rem!important;page-break-inside:avoid}
+
+            /* Etapas posteriores — compactas */
+            #extras .sh{margin-bottom:.5rem!important}
+            #extras .sh p{font-size:.8rem!important;line-height:1.45!important}
+            #extras .card{padding:.55rem .8rem!important}
+            #extras .card h3{font-size:.85rem!important}
+            #extras .card p{font-size:.78rem!important}
+
+            /* Observação — colado ao cronograma */
+            .sec[style*="padding:2rem 0"]{padding:.4rem 0!important}
+
+            /* Seção Sobre — compacta */
+            #sobre{
+                background:var(--navy)!important;
+                color:#fff!important;
+                page-break-inside:avoid;
+                padding:1rem 1.5rem!important;
+            }
+            .about-photo{
+                width:80px!important;height:80px!important;
+                border:2px solid var(--gold)!important;
+                box-shadow:none!important;
+                margin-bottom:.6rem!important;
+            }
+            #sobre h2{font-size:12pt!important;color:#fff!important;margin-bottom:.1rem!important}
+            #sobre p{font-size:.8rem!important;line-height:1.5!important}
+
+            /* Backgrounds */
+            .bg-l{background:#f8f9fb!important}
+            .bg-d{background:var(--navy)!important;color:#fff!important}
+
+            /* Links */
+            a[href]{color:var(--blue)!important;text-decoration:none!important}
+
+            /* Footer — ocultar na impressão */
+            footer{display:none!important}
+
+            /* Fluxo contínuo — sem quebras forçadas, conteúdo preenche naturalmente */
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. HERO / CAPA -->
+<section class="hero">
+    <div class="hero-c">
+        <img src="2026-03-27_Arquivo_Euzilanea-Data5.png" alt="Data Secure Logo" class="hero-logo" style="animation:fadeUp .8s .1s ease both;max-width:240px;margin-bottom:1rem">
+        <div style="display:inline-block;background:rgba(255,197,36,.15);color:var(--gold);padding:.35rem 1rem;border-radius:999px;font-size:.78rem;font-weight:600;border:1px solid rgba(255,197,36,.3);margin-bottom:1.25rem;animation:fadeUp .8s .15s ease both">
+            Proposta Exclusiva — 1º Ofício de Alegre/ES
+        </div>
+        <p style="font-size:.95rem;color:rgba(255,255,255,.85);font-weight:500;margin-bottom:.5rem;animation:fadeUp .8s .18s ease both">Ilmo. Sr. Delegatário <strong style="color:var(--white)">Franklin Monteiro Estrella</strong></p>
+        <h1>Programa <span class="grad-text">Diligência Dedicada®</span></h1>
+        <p style="margin-bottom:1.5rem">Dossiê de Compliance Digital e Plano de Ação Estratégico de Adequação ao <strong style="color:var(--gold)">Provimento CNJ 213/2026</strong></p>
+        <div style="animation:fadeUp .8s .55s ease both">
+            <a href="https://wa.me/5527998808929?text=Ol%C3%A1%2C%20sou%20Franklin%20Monteiro%20Estrella%2C%20titular%20do%201%C2%BA%20Of%C3%ADcio%20de%20Alegre%2FES.%20Tenho%20interesse%20no%20Programa%20Dilig%C3%AAncia%20Coletiva%C2%AE%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20ades%C3%A3o." target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy);font-weight:700;padding:.85rem 2rem;border-radius:10px;font-size:1rem;text-decoration:none;transition:transform var(--tr),box-shadow var(--tr);box-shadow:0 4px 16px rgba(255,197,36,.3)">Quero Proteger Minha Delegação</a>
+        </div>
+        <div style="margin-top:1.5rem;animation:fadeUp .8s .7s ease both;max-width:640px;margin-left:auto;margin-right:auto">
+            <p style="font-size:.88rem;color:rgba(255,255,255,.9);font-weight:600;margin-bottom:.35rem">Prazo final de adesão para a 1ª turma: <span style="color:var(--gold);font-size:1rem">21 de abril de 2026</span>.</p>
+            <p style="font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.6;margin-bottom:.35rem">Data de envio para a Corregedoria: <strong style="color:rgba(255,255,255,.8)">25/05/2026</strong>.</p>
+            <p style="font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.6">Atendimento por ordem de protocolo formalizado através de contrato assinado e adesão quitada — vagas limitadas devido ao prazo regulatório (até 20 serventias).</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- 2. CONTEXTO REGULATÓRIO -->
+<section class="sec bg-l" id="contexto">
+    <div class="container-sm">
+        <div class="sh"><h2>Contexto Regulatório — Por Que Agora</h2><hr class="grad-div"></div>
+        <p style="margin-bottom:1.25rem;line-height:1.75;color:var(--s700);text-align:justify">O marco regulatório das serventias extrajudiciais passou por uma evolução acelerada nos últimos anos. O <strong>Provimento CNJ 149/2023</strong> inaugurou exigências de segurança da informação e o <strong>Provimento CNJ 213/2026</strong> consolidou um novo patamar, com sanções severas para quem não se adequar.</p>
+        <p style="font-weight:600;color:var(--s800);margin-bottom:1rem;text-align:justify">A regra é clara: delegar a TI a terceiros não delega a responsabilidade pela fiscalização. Isso acontece quando:</p>
+        <div class="grid" style="gap:.75rem;margin-bottom:1.5rem;">
+            <div class="bubble anim"><div class="bubble-icon">1</div><p>O fornecedor de SGBD <strong>não entrega os relatórios de evidência obrigatórios</strong> exigidos pela norma</p></div>
+            <div class="bubble anim"><div class="bubble-icon">2</div><p>O backup em nuvem <strong>nunca foi testado na prática</strong> — e na hora do incidente, não funciona</p></div>
+            <div class="bubble anim"><div class="bubble-icon">3</div><p>O contrato com o fornecedor <strong>não possui NAS, DPA ou cláusula de continuidade</strong></p></div>
+            <div class="bubble anim"><div class="bubble-icon">4</div><p>A infraestrutura de TI <strong>não atende aos controles mínimos</strong> de segurança da informação</p></div>
+            <div class="bubble anim"><div class="bubble-icon">5</div><p><strong>Não existem evidências</strong> de que o Delegatário(a) fiscaliza ativamente os serviços de TI contratados</p></div>
+        </div>
+        <div class="alert-d anim">
+            <strong>Consequência: processo administrativo, multa, suspensão, perda da delegação.</strong>
+            <p>É sobre GRC — Governança de Riscos e Conformidade. É sobre saber que você está seguro ou não.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 3. O RISCO REAL -->
+<section class="sec bg-w" id="risco">
+    <div class="container">
+        <div class="sh">
+            <h2>O Risco Real: A Dependência que Ninguém Vê</h2><hr class="grad-div">
+            <p>A maioria dos delegatários depende criticamente de fornecedores de TI sem perceber. O sistema funciona — até o dia em que não funciona mais.</p>
+        </div>
+        <div class="grid g2">
+            <div class="qcard anim">
+                <div class="icon-row"><div class="ic" style="background:linear-gradient(135deg,var(--gold),var(--gold-dark))"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg></div><div><span style="font-size:.85rem;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.04em">Analogia do dia a dia</span></div></div>
+                <blockquote style="border-color:var(--gold)">"É como dirigir um carro sem nunca olhar debaixo do capô. O carro anda — até o dia que não anda mais. E aí o motorista descobre que o mecânico nunca trocou o óleo de verdade."</blockquote>
+            </div>
+            <div class="qcard anim">
+                <div class="icon-row"><div class="ic" style="background:linear-gradient(135deg,var(--blue),#2563EB)"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/></svg></div><div><span style="font-size:.85rem;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.04em">Realidade da serventia</span></div></div>
+                <blockquote style="border-color:var(--blue)">"O delegatário paga fornecedores de SGBD, nuvem, cópia de segurança e infraestrutura — mas não sabe se a cópia funciona, se o contrato protege a serventia ou se o fornecedor tem plano B."</blockquote>
+            </div>
+        </div>
+        <div class="gr anim"><h3>Regra de Ouro</h3><p>"O fornecedor fornece. Quem fiscaliza é o delegatário. E quem responde pela omissão na fiscalização é o delegatário — não o fornecedor."</p></div>
+    </div>
+</section>
+
+<!-- 4. O QUE SUA SERVENTIA RECEBE -->
+<section class="sec bg-l" id="como-funciona">
+    <div class="container">
+        <div class="sh"><h2>O Que Sua Serventia Recebe</h2><hr class="grad-div">
+            <p style="text-align:justify">O programa foi desenhado para o 1º Ofício de Alegre/ES com base no seu contexto operacional. O trabalho será conduzido em duas frentes paralelas, cujos resultados compõem o seu Dossiê de Compliance Digital:</p>
+        </div>
+        <div class="grid g2" style="margin-bottom:2.5rem">
+            <div class="fc anim" style="border-color:var(--blue)">
+                <h3 style="font-family:var(--font);font-size:1.1rem;font-weight:700;margin-bottom:.75rem">Diagnóstico da Sua Serventia</h3>
+                <p style="color:var(--s600);font-size:.88rem;text-align:justify">Avaliação individualizada da infraestrutura, governança e controles de TI do seu cartório, mapeando o grau de atendimento ao Provimento CNJ 213/2026.</p>
+            </div>
+            <div class="fc anim" style="border-color:var(--gold)">
+                <h3 style="font-family:var(--font);font-size:1.1rem;font-weight:700;margin-bottom:.75rem">Auditoria dos Seus Fornecedores</h3>
+                <p style="color:var(--s600);font-size:.88rem;text-align:justify">Análise técnica e regulatória de cada fornecedor de TI contratado pelo seu cartório — SGBD, backup em nuvem, infraestrutura, contabilidade, câmeras e biometria.</p>
+            </div>
+        </div>
+        <div style="background:#EFF6FF;border-left:4px solid var(--blue);border-radius:8px;padding:1.25rem 1.5rem;margin-bottom:2.5rem">
+            <p style="font-size:.9rem;color:var(--s700);text-align:justify">A entrega da 1ª Etapa é o seu <strong>Dossiê de Compliance Digital e Plano de Ação Estratégico</strong> — documento exclusivo do 1º Ofício de Alegre/ES, com valor probatório perante a Corregedoria. A partir dele, as etapas de implementação e monitoramento contínuo dão sequência ao percurso de adequação.</p>
+        </div>
+        <div class="sh"><h3 style="font-family:var(--serif);font-size:1.3rem">Entregáveis do Diagnóstico</h3></div>
+        <div style="display:flex;flex-direction:column;gap:1rem">
+            <div class="card anim" style="padding:1.25rem 1.5rem"><div style="display:flex;align-items:flex-start;gap:1rem"><div class="fc-num" style="background:var(--blue)">1</div><div><h4 style="font-family:var(--font);font-size:.95rem;font-weight:700;margin-bottom:.3rem">Diagnóstico de Conformidade ao Provimento 213/2026</h4><p style="font-size:.85rem;color:var(--s600);text-align:justify">Relatório com o grau de atendimento do seu cartório a cada requisito do Provimento, com classificação por criticidade.</p></div></div></div>
+            <div class="card anim" style="padding:1.25rem 1.5rem"><div style="display:flex;align-items:flex-start;gap:1rem"><div class="fc-num" style="background:var(--blue)">2</div><div><h4 style="font-family:var(--font);font-size:.95rem;font-weight:700;margin-bottom:.3rem">Mapeamento da Cadeia de Fornecedores</h4><p style="font-size:.85rem;color:var(--s600);text-align:justify">Inventário dos seus 6 fornecedores de TI, com classificação de criticidade e grau de dependência. Se um deles desaparecer amanhã, qual o impacto na sua operação?</p></div></div></div>
+            <div class="card anim" style="padding:1.25rem 1.5rem"><div style="display:flex;align-items:flex-start;gap:1rem"><div class="fc-num" style="background:var(--blue)">3</div><div><h4 style="font-family:var(--font);font-size:.95rem;font-weight:700;margin-bottom:.3rem">Análise de Vulnerabilidades</h4><p style="font-size:.85rem;color:var(--s600);text-align:justify">Avaliação de cada fornecedor em 5 dimensões: contratual, técnica, operacional, regulatória e de continuidade. Classificação por Probabilidade × Impacto conforme ISO 31000.</p></div></div></div>
+            <div class="card anim" style="padding:1.25rem 1.5rem"><div style="display:flex;align-items:flex-start;gap:1rem"><div class="fc-num" style="background:var(--blue)">4</div><div><h4 style="font-family:var(--font);font-size:.95rem;font-weight:700;margin-bottom:.3rem">Matriz de Riscos do Seu Cartório</h4><p style="font-size:.85rem;color:var(--s600);text-align:justify">Mapa de calor exclusivo, mostrando onde estão os riscos críticos, altos, médios e baixos na sua cadeia de fornecedores.</p></div></div></div>
+            <div class="card anim" style="padding:1.25rem 1.5rem"><div style="display:flex;align-items:flex-start;gap:1rem"><div class="fc-num" style="background:var(--blue)">5</div><div><h4 style="font-family:var(--font);font-size:.95rem;font-weight:700;margin-bottom:.3rem">Plano de Ação Priorizado</h4><p style="font-size:.85rem;color:var(--s600);text-align:justify">Para cada vulnerabilidade: ação corretiva, responsável, prazo e indicador de acompanhamento. Priorizado pela capacidade real da sua serventia.</p></div></div></div>
+            <div class="card anim" style="padding:1.25rem 1.5rem"><div style="display:flex;align-items:flex-start;gap:1rem"><div class="fc-num" style="background:var(--blue)">6</div><div><h4 style="font-family:var(--font);font-size:.95rem;font-weight:700;margin-bottom:.3rem">Cronograma de Aprimoramento</h4><p style="font-size:.85rem;color:var(--s600);text-align:justify">Linha do tempo realista com marcos de entrega, alinhado aos prazos do Provimento CNJ 213/2026.</p></div></div></div>
+            <div class="card anim" style="padding:1.25rem 1.5rem"><div style="display:flex;align-items:flex-start;gap:1rem"><div class="fc-num" style="background:var(--blue)">7</div><div><h4 style="font-family:var(--font);font-size:.95rem;font-weight:700;margin-bottom:.3rem">Recomendações Estratégicas</h4><p style="font-size:.85rem;color:var(--s600);text-align:justify">Alertas sobre fornecedores que representam risco de sanção e orientações sobre renegociação contratual ou adequação.</p></div></div></div>
+            <div class="card anim" style="padding:1.25rem 1.5rem"><div style="display:flex;align-items:flex-start;gap:1rem"><div class="fc-num" style="background:var(--blue)">8</div><div><h4 style="font-family:var(--font);font-size:.95rem;font-weight:700;margin-bottom:.3rem">Dossiê de Evidências Documentais</h4><p style="font-size:.85rem;color:var(--s600);text-align:justify">Material probatório para a Corregedoria: registros de contratos, resultados de testes, correspondências com fornecedores, atas de reunião.</p></div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- 5. DIFERENCIAIS DESTA PROPOSTA -->
+<section class="sec bg-l" id="diferenciais">
+    <div class="container">
+        <div class="sh"><h2>Por Que Esta Proposta é Diferente</h2><hr class="grad-div"></div>
+        <div class="grid g3">
+            <div class="card anim"><div class="ic" style="background:linear-gradient(135deg,var(--emerald),#059669);margin-bottom:1rem"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg></div><h3 class="card-t">Crédito de Contrato Anterior</h3><p class="card-p">R$ 9.000,00 já quitados são abatidos integralmente. Sua Etapa 1 sai por R$ 3.000,00.</p></div>
+            <div class="card anim"><div class="ic" style="background:linear-gradient(135deg,var(--blue),#2563EB);margin-bottom:1rem"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div><h3 class="card-t">Dossiê com Valor Legal</h3><p class="card-p">Documento estruturado para defesa perante a Corregedoria. Evidência de fiscalização ativa dos fornecedores de TI.</p></div>
+            <div class="card anim"><div class="ic" style="background:linear-gradient(135deg,var(--purple),#6D28D9);margin-bottom:1rem"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg></div><h3 class="card-t">Confidencialidade Total</h3><p class="card-p">Seu relatório é exclusivo. Nenhum dado do seu cartório é compartilhado com terceiros.</p></div>
+            <div class="card anim"><div class="ic" style="background:linear-gradient(135deg,var(--indigo),#4338CA);margin-bottom:1rem"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg></div><h3 class="card-t">Cumprimento ao Provimento 213/2026</h3><p class="card-p">Adequação integral dentro do prazo regulatório de 24 meses — diagnóstico, implementação e monitoramento contínuo.</p></div>
+            <div class="card anim" style="border:2px solid var(--gold)"><div class="ic" style="background:linear-gradient(135deg,var(--gold),var(--gold-dark));margin-bottom:1rem"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div><h3 class="card-t">Percurso Sugerido</h3><p class="card-p">Do diagnóstico à implementação e monitoramento contínuo — sem lacunas entre etapas. Etapas 1 + 2 + 3 + 4 diluídas em 12 meses, sem entrada, com AECD + Suporte DPO.</p></div>
+            <div class="card anim"><div class="ic" style="background:linear-gradient(135deg,var(--rose),#BE123C);margin-bottom:1rem"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h3 class="card-t">Flexibilidade de Contratação</h3><p class="card-p">Contrate conforme a sua necessidade. Sem entrada. Etapas e serviços configuráveis.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- INVESTIMENTO -->
+<section class="sim-section" id="simulador">
+    <div class="sim-container">
+        <h2 class="sim-title">Investimento</h2>
+
+        <!-- CRÉDITO + ETAPAS -->
+        <div class="sim-panel">
+            <h3 class="sim-panel-title">Etapas do Projeto — selecione as que deseja contratar</h3>
+
+            <div style="background:linear-gradient(135deg,#ECFDF5,#D1FAE5);border:2px solid var(--emerald);border-radius:8px;padding:.9rem 1.2rem;margin-bottom:1.25rem">
+                <p style="font-size:.85rem;color:#065F46;text-align:justify"><strong>Crédito de R$ 9.000,00</strong> de contrato anterior já quitado — abatido da Etapa 1.</p>
+            </div>
+
+            <div class="cart-item obrigatorio">
+                <label><input type="checkbox" id="cart1" checked disabled><div><span class="cart-nome">Etapa 1 — Diagnóstico de Conformidade</span><span class="cart-tag">obrigatória</span><p class="cart-desc">Dossiê completo: diagnóstico, auditoria de fornecedores, matriz de riscos, plano de ação</p></div></label>
+                <div style="text-align:right;flex-shrink:0;margin-left:1rem"><p style="font-size:.75rem;color:var(--s600);text-decoration:line-through">R$ 12.000</p><span class="cart-preco" style="color:#059669">R$ 3.000,00</span></div>
+            </div>
+            <div class="cart-item opcional">
+                <label><input type="checkbox" id="cart2" checked><div><span class="cart-nome">Etapa 2 — Implementação Prov. 213/2026</span><p class="cart-desc">PSI, PCN, PRD, PRI, Política de Cópia de Segurança, controles de acesso</p></div></label>
+                <span class="cart-preco">R$ 12.000,00</span>
+            </div>
+            <div class="cart-item opcional">
+                <label><input type="checkbox" id="cart3" checked><div><span class="cart-nome">Etapa 3 — Implementação LGPD</span><p class="cart-desc">ROPA, Política de Privacidade, DPA, Termo de Consentimento</p></div></label>
+                <span class="cart-preco">R$ 6.000,00</span>
+            </div>
+            <p style="font-size:.75rem;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.05em;margin:1rem 0 .5rem;padding-top:.75rem;border-top:2px solid var(--s200)">Etapa 4 — Gestão de Migração (selecione uma ou mais)</p>
+            <div class="cart-item opcional">
+                <label><input type="checkbox" id="cart4a" checked><div><span class="cart-nome">SGBD — Migração</span><p class="cart-desc">Acompanhamento técnico e estratégico por migração executada</p></div></label>
+                <span class="cart-preco">R$ 8.000,00</span>
+            </div>
+            <div class="cart-item opcional">
+                <label><input type="checkbox" id="cart4b"><div><span class="cart-nome">Backup em Nuvem — Território Nacional</span><p class="cart-desc">Acompanhamento técnico e estratégico dentro do território nacional</p></div></label>
+                <span class="cart-preco">R$ 4.000,00</span>
+            </div>
+            <div class="cart-item opcional">
+                <label><input type="checkbox" id="cart4c"><div><span class="cart-nome">Backup em Nuvem — Repatriação</span><p class="cart-desc">Acompanhamento técnico e estratégico — repatriação de dados</p></div></label>
+                <span class="cart-preco">R$ 10.000,00</span>
+            </div>
+
+            <div class="sim-dark">
+                <div class="sim-dark-row"><span class="l">Etapas selecionadas:</span><span class="v" id="cartCount">1</span></div>
+                <div class="sim-dark-row"><span class="l">Total das etapas:</span><span class="v" id="cartTotal">R$ 3.000,00</span></div>
+                <div class="sim-dark-divider"></div>
+                <div class="sim-dark-row gold"><span class="l">Diluído em 12× sem entrada:</span><span class="v" id="cartParcEtapa">R$ 250,00/mês</span></div>
+            </div>
+        </div>
+
+        <!-- ACOMPANHAMENTO -->
+        <div class="sim-panel">
+            <h3 class="sim-panel-title">Acompanhamento Contínuo (mensal)</h3>
+            <p style="font-size:.8rem;color:var(--s600);margin-bottom:1rem;text-align:justify">Suporte DPO e AECD podem ser contratados juntos. AECD + DPO as a Service já inclui tudo.</p>
+
+            <div class="cart-item opcional">
+                <label><input type="checkbox" id="cartSupDpo" checked><div><span class="cart-nome">Suporte ao DPO Interno</span><p class="cart-desc">Orientação técnica, revisão de processos, conformidade LGPD</p></div></label>
+                <span class="cart-preco">R$ 1.880,36/mês</span>
+            </div>
+            <div class="cart-item opcional">
+                <label><input type="checkbox" id="cartAecd" checked><div><span class="cart-nome">AECD — Convergência Digital</span><p class="cart-desc">Monitoramento, auditoria interna e fiscalização dos fornecedores de TI</p></div></label>
+                <span class="cart-preco">R$ 3.876,72/mês</span>
+            </div>
+            <div class="cart-item opcional" style="border:2px solid var(--gold)">
+                <label><input type="checkbox" id="cartDpo"><div><span class="cart-nome">AECD + DPO as a Service <span style="font-size:.65rem;font-weight:700;color:var(--gold-dark);background:rgba(255,197,36,.2);padding:.15rem .45rem;border-radius:4px;margin-left:.3rem">completo</span></span><p class="cart-desc">Inclui Etapas 1 a 4 + acompanhamento contínuo. Fidelidade 12 meses</p></div></label>
+                <span class="cart-preco">R$ 7.543,09/mês</span>
+            </div>
+
+            <div class="sim-dark">
+                <div class="sim-dark-row"><span class="l">Recorrente selecionado:</span><span class="v" id="cartMensal">—</span></div>
+            </div>
+        </div>
+
+        <!-- CONSOLIDADO -->
+        <div class="sim-panel" style="border:2px solid var(--gold)">
+            <h3 class="sim-panel-title" style="border-bottom-color:var(--gold)">Resumo — Quanto Você Paga por Mês</h3>
+            <p style="font-size:.8rem;color:var(--s600);margin-bottom:1rem;text-align:justify">Sem entrada. O valor das etapas é diluído em 12 parcelas mensais, somado ao serviço de acompanhamento escolhido.</p>
+            <div class="sim-dark" style="margin-top:0">
+                <div class="sim-dark-row"><span class="l">Parcela das etapas (÷ 12):</span><span class="v" id="consEtapa">R$ 250,00</span></div>
+                <div class="sim-dark-row"><span class="l">Acompanhamento contínuo:</span><span class="v" id="consRecorrente">—</span></div>
+                <div class="sim-dark-divider"></div>
+                <div style="display:flex;justify-content:space-between;align-items:center;padding:.5rem 0"><span style="color:rgba(255,255,255,.7);font-size:.95rem;font-weight:600">Total do percurso:</span><span style="font-size:1.2rem;font-weight:700;color:rgba(255,255,255,.5);text-decoration:line-through" id="consTotal">R$ 250,00/mês</span></div>
+                <p style="font-size:.72rem;color:rgba(255,255,255,.35);margin-top:.2rem" id="consDetalhe">Etapas: R$ 3.000,00 ÷ 12 = R$ 250,00/mês</p>
+            </div>
+            <!-- Valor negociado — DESTAQUE -->
+            <div style="background:linear-gradient(135deg,var(--gold),var(--gold-dark));border-radius:12px;padding:2rem 1.5rem;margin-top:1.25rem;text-align:center;box-shadow:0 8px 24px rgba(255,197,36,.3)">
+                <p style="font-size:.78rem;font-weight:600;color:var(--navy);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.5rem">Condição exclusiva — 1º Ofício de Alegre/ES</p>
+                <p style="font-size:3rem;font-weight:900;color:var(--navy);line-height:1;margin-bottom:.15rem">R$ 5.000<span style="font-size:1.2rem;font-weight:700">,00/mês</span></p>
+                <p style="font-size:.85rem;color:var(--navy);font-weight:500;opacity:.8;margin-bottom:.75rem">Sem entrada. Fidelidade de 12 meses.</p>
+                <div style="background:rgba(9,19,69,.12);border-radius:8px;padding:.6rem 1rem;display:inline-block">
+                    <p style="font-size:.78rem;color:var(--navy);font-weight:600">Inclui todas as etapas selecionadas + AECD + Suporte ao DPO Interno</p>
+                </div>
+            </div>
+            <p style="font-size:.72rem;color:var(--s600);margin-top:.75rem;text-align:justify">Ao desmarcar etapas ou serviços, o valor retorna à proposta original calculada acima. A condição de R$ 5.000,00/mês é válida para o percurso sugerido.</p>
+        </div>
+
+        <!-- CRONOGRAMA INDIVIDUALIZADO -->
+        <div class="sim-panel">
+            <h3 class="sim-panel-title">Cronograma da Etapa 1 — Diagnóstico do 1º Ofício de Alegre/ES</h3>
+            <p style="font-size:.82rem;color:var(--s600);margin-bottom:.4rem;text-align:justify">Prazo de adesão: <strong style="color:var(--red)">até 21/04/2026</strong>. Entrega do Dossiê ao Sr. Franklin: <strong style="color:var(--red)">25/05/2026</strong>.</p>
+            <p style="font-size:.82rem;color:var(--s600);margin-bottom:1.25rem;text-align:justify">As etapas de implementação (2, 3 e 5) serão executadas sequencialmente após a entrega do Diagnóstico, dentro do prazo regulatório de 24 meses.</p>
+            <div class="tl">
+                <div class="tl-item"><div class="tl-c"><h3>Formalização e Coleta</h3><p class="ph">Semana 1 · 20/04 a 24/04</p><p>Assinatura do contrato, levantamento dos 6 fornecedores de TI do cartório, coleta de contratos vigentes e políticas internas existentes.</p></div></div>
+                <div class="tl-item"><div class="tl-c"><h3>Diagnóstico da Serventia + Auditoria dos Fornecedores</h3><p class="ph">Semanas 2-3 · 27/04 a 08/05 (executadas em paralelo)</p><p>Análise da infraestrutura e governança do 1º Ofício de Alegre/ES. Auditoria técnica e regulatória dos fornecedores de SGBD, backup, infraestrutura, contabilidade, câmeras e biometria.</p></div></div>
+                <div class="tl-item"><div class="tl-c"><h3>Consolidação do Dossiê</h3><p class="ph">Semana 4 · 11/05 a 15/05</p><p>Construção da Matriz de Riscos do cartório, priorização do Plano de Ação, redação das Recomendações Estratégicas e montagem do Dossiê de Evidências.</p></div></div>
+                <div class="tl-item"><div class="tl-c"><h3>Apresentação dos Resultados</h3><p class="ph">Semana 5 · 18/05 a 22/05</p><p>Reunião exclusiva com o Sr. Franklin via Microsoft Teams. Apresentação detalhada do Dossiê, validação dos achados, ajustes finais. Pauta prévia e ata registrada.</p></div></div>
+                <div class="tl-item"><div class="tl-c hl"><h3>Entrega Final da 1ª Etapa</h3><p class="ph">25/05/2026</p><p><strong>Dossiê de Compliance Digital finalizado, com valor probatório para a Corregedoria. Documento pronto para envio.</strong></p></div></div>
+            </div>
+        </div>
+
+        <!-- Botões -->
+        <div class="sim-actions">
+            <button onclick="window.print()" class="sim-btn secondary">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                Imprimir Proposta
+            </button>
+            <a href="#escopo-servicos" class="sim-btn secondary">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                Escopo dos Serviços (AECD / DPO / Suporte)
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="sec bg-w" id="cta">
+    <div class="container-sm" style="text-align:center">
+        <div class="cta-box" id="ctaBox" style="margin-bottom:0">
+            <span class="cta-badge">Recomendado</span>
+            <div class="cta-ic"><svg width="28" height="28" fill="none" stroke="var(--navy)" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+            <h3 style="font-family:var(--serif);font-size:1.5rem;font-weight:700;margin-bottom:.5rem">Aderir ao Percurso Sugerido</h3>
+            <p style="font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:1rem">Conheça o passo a passo para iniciar seu diagnóstico de conformidade</p>
+            <span style="font-size:.9rem;font-weight:600;color:var(--gold);cursor:pointer" id="toggleSteps">&#9660; Clique aqui para conhecer os 4 passos</span>
+        </div>
+        <div class="steps-panel" id="stepsPanel">
+            <div class="step"><div class="step-n">1</div><div><h4>Contato e Alinhamento</h4><p>Entre em contato via WhatsApp. Fazemos um alinhamento inicial para entender o contexto da sua serventia e seus fornecedores atuais.</p></div></div>
+            <div class="step"><div class="step-n">2</div><div><h4>Formalização e Adesão</h4><p>Assinatura do contrato de prestação de serviço, definição de cronograma e coleta inicial de documentos e contratos vigentes.</p></div></div>
+            <div class="step"><div class="step-n">3</div><div><h4>Diagnóstico e Auditoria</h4><p>Execução paralela do diagnóstico individual da serventia e da auditoria dos fornecedores compartilhados pelo grupo.</p></div></div>
+            <div class="step"><div class="step-n">4</div><div><h4>Entrega do Relatório</h4><p>Receba seu Relatório de Diagnóstico de Conformidade Digital estruturado, com Plano de Ação priorizado e Dossiê de Evidências.</p></div></div>
+            <a href="https://wa.me/5527998808929?text=Ol%C3%A1%2C%20sou%20Franklin%20Monteiro%20Estrella%2C%201%C2%BA%20Of%C3%ADcio%20de%20Alegre%2FES.%20Gostaria%20de%20iniciar%20o%20processo%20de%20ades%C3%A3o%20ao%20Programa%20Dilig%C3%AAncia%20Coletiva%C2%AE." target="_blank" rel="noopener" class="steps-cta">Falar com a Data Secure via WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sec bg-d" id="sobre">
+    <div class="container-sm" style="text-align:center">
+        <img src="2026-03-27_Arquivo_perfil.jpg" alt="Euzilanea Miotto" class="about-photo">
+        <h2 style="font-size:1.6rem;margin-bottom:.2rem;text-align:center;color:var(--white)">Euzilanea Miotto</h2>
+        <p style="color:var(--gold);font-weight:600;font-size:.9rem;margin-bottom:1.25rem;text-align:center">Estrategista em Governança de TI e Riscos para o Setor Extrajudicial</p>
+        <p style="max-width:640px;margin:0 auto .75rem;color:rgba(255,255,255,.8);font-size:.9rem;line-height:1.75;text-align:justify">Fundadora da Data Secure®, Euzilanea é a mentora por trás das estratégias de conformidade mais robustas do mercado notarial brasileiro. Com foco absoluto na transição para o Provimento CNJ 213/2026, sua atuação vai além do "compliance de papel": ela entrega segurança jurídica real através da tecnologia.</p>
+        <p style="max-width:640px;margin:0 auto 1.5rem;color:rgba(255,255,255,.8);font-size:.9rem;line-height:1.75;text-align:justify">Especialista em GRC e Continuidade de Negócios, Euzilanea ajuda Tabeliães e Registradores a eliminarem o ponto cego da gestão de fornecedores de TI. Sua missão é garantir que a serventia produza evidências técnicas inquestionáveis para fiscalizações, protegendo a delegação contra falhas críticas e garantindo a continuidade ininterrupta da fé pública.</p>
+        <div class="contact-links">
+            <a href="mailto:euzilanea.miotto@datasecure.seg.br"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg> E-mail</a>
+            <a href="https://instagram.com/datasecurebrasil" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Instagram</a>
+            <a href="https://linkedin.com/in/euzilaneamiotto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a>
+            <a href="https://datasecure.seg.br" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg> Site</a>
+            <a href="https://wa.me/5527998808929?text=Ol%C3%A1%2C%20sou%20Franklin%20Monteiro%20Estrella%2C%201%C2%BA%20Of%C3%ADcio%20de%20Alegre%2FES.%20Vim%20pela%20p%C3%A1gina%20do%20Programa%20Dilig%C3%AAncia%20Coletiva%C2%AE." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg> WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<!-- LABORATÓRIO DE GOVERNANÇA -->
+<section class="sec bg-l" id="laboratorio">
+    <div class="container-sm">
+        <div class="sh"><h2>Laboratório de Governança</h2><hr class="grad-div"></div>
+        <div class="grid g2">
+            <div class="sim-glass" style="padding:2rem">
+                <h3 style="font-family:var(--font);font-size:1.1rem;font-weight:700;margin-bottom:1rem">Tradutor de Tecniquês</h3>
+                <label style="font-size:.85rem;color:rgba(255,255,255,.7);display:block;margin-bottom:.5rem">Palavra ou termo:</label>
+                <input type="text" id="tradutorInput" placeholder="Ex: SGBD, backup, nuvem..." style="width:100%;padding:.7rem 1rem;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.06);color:var(--white);font-size:.9rem;margin-bottom:.75rem;font-family:var(--font)">
+                <button onclick="traduzir()" style="width:100%;padding:.7rem;border:none;border-radius:8px;background:var(--gold);color:var(--navy);font-weight:700;font-size:.9rem;cursor:pointer;font-family:var(--font);transition:transform var(--tr)">Traduzir</button>
+                <div id="tradutorResult" style="margin-top:1rem;font-size:.85rem;color:rgba(255,255,255,.8);line-height:1.6;display:none;background:rgba(255,255,255,.06);border-radius:8px;padding:1rem"></div>
+            </div>
+            <div class="sim-glass" style="padding:2rem">
+                <h3 style="font-family:var(--font);font-size:1.1rem;font-weight:700;margin-bottom:1rem">Gerador de Perguntas de Auditoria</h3>
+                <p style="font-size:.85rem;color:rgba(255,255,255,.7);margin-bottom:1rem">3 perguntas para refletir sobre sua conformidade:</p>
+                <button onclick="gerarPerguntas()" style="width:100%;padding:.7rem;border:none;border-radius:8px;background:var(--gold);color:var(--navy);font-weight:700;font-size:.9rem;cursor:pointer;font-family:var(--font);transition:transform var(--tr)">Gerar Perguntas</button>
+                <div id="perguntasResult" style="margin-top:1rem;font-size:.85rem;color:rgba(255,255,255,.8);line-height:1.8;display:none;background:rgba(255,255,255,.06);border-radius:8px;padding:1rem"></div>
+            </div>
+        </div>
+        <p style="text-align:center;font-size:.8rem;color:var(--blue);margin-top:1.25rem;font-weight:500">Demonstração com respostas pré-configuradas por especialistas da Data Secure®.</p>
+    </div>
+</section>
+
+<!-- ANEXO — ESCOPO DOS SERVIÇOS -->
+<section class="sec bg-w" id="escopo-servicos" style="border-top:4px solid var(--gold)">
+    <div class="container">
+        <div class="sh"><h2>Anexo — Escopo dos Serviços de Acompanhamento Contínuo</h2><hr class="grad-div"></div>
+
+        <!-- ===== AECD ===== -->
+        <div id="escopo-aecd" style="margin-bottom:3rem">
+            <h3 style="font-family:var(--serif);font-size:1.3rem;color:var(--navy);margin-bottom:.2rem">AECD — Assessoria Estratégica de Convergência Digital</h3>
+            <p style="font-size:.85rem;color:var(--blue);font-weight:600;margin-bottom:1rem">R$ 3.876,72/mês</p>
+
+            <div style="background:linear-gradient(135deg,#FFFBEB,#FEF3C7);border:2px solid var(--gold);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:1.5rem">
+                <p style="font-size:.88rem;color:var(--s800);line-height:1.7;text-align:justify">A AECD é o serviço de monitoramento contínuo e produção de evidências que viabiliza a convergência digital segura da serventia. Funciona como um <strong>"C-Level fracionado"</strong> — um executivo de governança de TI dedicado à serventia, sem o custo de uma contratação em tempo integral.</p>
+                <p style="font-size:.88rem;color:var(--s800);line-height:1.7;text-align:justify;margin-top:.5rem">Na prática: imagine que o senhor contratou um auditor permanente que fala a língua dos fornecedores de TI, cobra evidências, verifica se estão entregando o que prometeram e documenta cada passo — produzindo o dossiê que a Corregedoria exige.</p>
+            </div>
+
+            <h4 style="font-family:var(--font);font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:.75rem">Metodologia — Retomada do Controle (4 Eixos Táticos)</h4>
+
+            <div class="card anim" style="padding:1.25rem 1.5rem;margin-bottom:.75rem">
+                <h4 style="font-family:var(--font);font-size:.92rem;font-weight:700;color:var(--navy);margin-bottom:.15rem">Eixo 1 — Monitoramento Contínuo de Fornecedores</h4>
+                <p style="font-size:.72rem;color:var(--blue);font-weight:500;margin-bottom:.5rem">Provimento CNJ 149/2023 (Arts. 101-104), Provimento CNJ 213/2026, ISO/IEC 27001:2022, COBIT 2019</p>
+                <ul style="padding-left:1.2rem;font-size:.83rem;color:var(--s700)">
+                    <li style="margin-bottom:.3rem">Acompanhamento da execução dos contratos de prestadores de TI (SGBD, nuvem, backup, infraestrutura)</li>
+                    <li style="margin-bottom:.3rem">Interlocução técnica com fornecedores — cobrança documentada de evidências, logs e relatórios</li>
+                    <li style="margin-bottom:.3rem">Verificação de conformidade dos operadores com procedimentos e políticas estabelecidos</li>
+                    <li style="margin-bottom:.3rem">Atualização do Painel de Riscos de fornecedores conforme novos fatos ou mudanças contratuais</li>
+                    <li>Produção de relatórios mensais com status, indicadores e recomendações</li>
+                </ul>
+            </div>
+
+            <div class="card anim" style="padding:1.25rem 1.5rem;margin-bottom:.75rem">
+                <h4 style="font-family:var(--font);font-size:.92rem;font-weight:700;color:var(--navy);margin-bottom:.15rem">Eixo 2 — Tradução Normativa e Documentação LGPD</h4>
+                <p style="font-size:.72rem;color:var(--blue);font-weight:500;margin-bottom:.5rem">LGPD (Lei 13.709/2018, Arts. 37, 39, 46), Provimento CNJ 149/2023, Provimento CNJ 213/2026, ISO/IEC 27701:2019</p>
+                <ul style="padding-left:1.2rem;font-size:.83rem;color:var(--s700)">
+                    <li style="margin-bottom:.3rem">Conversão das exigências dos Provimentos CNJ em linguagem acionável e praticável pela serventia</li>
+                    <li style="margin-bottom:.3rem">Revisão dos documentos de privacidade existentes (Política de Privacidade, Aviso, Termos de Consentimento)</li>
+                    <li style="margin-bottom:.3rem">Elaboração ou adequação do ROPA — Registro de Operações de Tratamento de Dados Pessoais</li>
+                    <li style="margin-bottom:.3rem">Revisão e elaboração de DPA — Acordo de Processamento de Dados com cada fornecedor</li>
+                    <li style="margin-bottom:.3rem">Apoio na estruturação do canal de atendimento ao titular de dados</li>
+                    <li>Orientação técnica para solicitações da ANPD ou da Corregedoria relativas à LGPD</li>
+                </ul>
+            </div>
+
+            <div class="card anim" style="padding:1.25rem 1.5rem;margin-bottom:.75rem">
+                <h4 style="font-family:var(--font);font-size:.92rem;font-weight:700;color:var(--navy);margin-bottom:.15rem">Eixo 3 — Gestão de Incidentes e Produção de Evidências</h4>
+                <p style="font-size:.72rem;color:var(--blue);font-weight:500;margin-bottom:.5rem">Provimento CNJ 213/2026, ISO/IEC 27001:2022, ISO 22301:2019, NIST CSF 2.0, LGPD Art. 48</p>
+                <ul style="padding-left:1.2rem;font-size:.83rem;color:var(--s700)">
+                    <li style="margin-bottom:.3rem">Resposta a incidentes de segurança envolvendo fornecedores — diagnóstico, documentação e notificação</li>
+                    <li style="margin-bottom:.3rem">Produção de dossiês de defesa do Titular em caso de falha de terceiros</li>
+                    <li style="margin-bottom:.3rem">Elaboração de pareceres técnicos e ofícios formais</li>
+                    <li>Manutenção de registro cronológico de incidentes e ações corretivas</li>
+                </ul>
+            </div>
+
+            <div class="card anim" style="padding:1.25rem 1.5rem;margin-bottom:1.25rem">
+                <h4 style="font-family:var(--font);font-size:.92rem;font-weight:700;color:var(--navy);margin-bottom:.15rem">Eixo 4 — Convergência Regulatória e Conformidade</h4>
+                <p style="font-size:.72rem;color:var(--blue);font-weight:500;margin-bottom:.5rem">Provimento CNJ 213/2026, Provimento CNJ 149/2023, Provimento CNJ 161/2024, ISO 37301:2021</p>
+                <ul style="padding-left:1.2rem;font-size:.83rem;color:var(--s700)">
+                    <li style="margin-bottom:.3rem">Monitoramento contínuo de novos provimentos, resoluções e portarias do CNJ</li>
+                    <li style="margin-bottom:.3rem">Atualização das normativas internas conforme mudanças regulatórias</li>
+                    <li style="margin-bottom:.3rem">Produção de relatórios periódicos de conformidade para a Corregedoria</li>
+                    <li style="margin-bottom:.3rem">Apoio na preparação de documentação para inspeções e correições</li>
+                    <li>Elaboração das Declarações de Conclusão de Etapas do Provimento 213/2026</li>
+                </ul>
+            </div>
+
+            <h4 style="font-family:var(--font);font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:.75rem">Entregáveis Recorrentes</h4>
+            <div style="overflow-x:auto">
+                <table style="width:100%;border-collapse:collapse;font-size:.82rem;margin-bottom:1rem">
+                    <thead><tr style="background:var(--navy);color:#fff"><th style="padding:.55rem .8rem;text-align:left;font-size:.75rem;text-transform:uppercase;letter-spacing:.03em">Entregável</th><th style="padding:.55rem .8rem;text-align:left;font-size:.75rem;text-transform:uppercase">Conteúdo</th><th style="padding:.55rem .8rem;text-align:left;font-size:.75rem;text-transform:uppercase">Periodicidade</th></tr></thead>
+                    <tbody>
+                        <tr><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)"><strong>Relatório Mensal</strong></td><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)">Status dos eixos, ocorrências, recomendações</td><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)">Mensal</td></tr>
+                        <tr style="background:var(--s50)"><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)"><strong>Painel de Riscos</strong></td><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)">Dashboard com classificação por fornecedor</td><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)">Bimestral</td></tr>
+                        <tr><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)"><strong>Atas de Reunião</strong></td><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)">Registro formal de reuniões</td><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)">Por evento</td></tr>
+                        <tr style="background:var(--s50)"><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)"><strong>Pareceres Técnicos</strong></td><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)">Posicionamento formal sobre TI e incidentes</td><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)">Sob demanda (1/mês, não cumulativo)</td></tr>
+                        <tr><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)"><strong>Dossiê de Diligência</strong></td><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)">Evidências de vigilância ativa</td><td style="padding:.5rem .8rem;border-bottom:1px solid var(--s200)">Sob demanda (1/mês, não cumulativo)</td></tr>
+                        <tr style="background:var(--s50)"><td style="padding:.5rem .8rem"><strong>Relatório de Conformidade</strong></td><td style="padding:.5rem .8rem">Status de adequação ao Prov. 213/2026</td><td style="padding:.5rem .8rem">Trimestral</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="font-size:.83rem;color:var(--s700);margin-bottom:1rem">Mínimo de 01 reunião mensal via Microsoft Teams, com pauta prévia e ata registrada. Incidente crítico: atuação em até 48h úteis. Canal: <strong>euzilanea.miotto@datasecure.seg.br</strong></p>
+
+            <div style="background:#FEF2F2;border-left:4px solid var(--red);border-radius:8px;padding:1rem 1.25rem">
+                <h4 style="font-family:var(--font);font-size:.88rem;font-weight:700;color:#991B1B;margin-bottom:.4rem">O que a AECD NÃO faz</h4>
+                <ul style="padding-left:1.2rem;font-size:.83rem;color:#7F1D1D">
+                    <li style="margin-bottom:.25rem">Treinamento e capacitação do DPO e colaboradores da serventia</li>
+                    <li style="margin-bottom:.25rem">Redação jurídica final de contratos — recomenda-se assessoria jurídica própria</li>
+                    <li style="margin-bottom:.25rem">Representação judicial da serventia ou de seus prepostos</li>
+                    <li style="margin-bottom:.25rem">Intervenções técnicas diretas em servidores, bancos de dados ou equipamentos</li>
+                    <li style="margin-bottom:.25rem">Execução operacional de rotinas de TI (backup, atualização, configuração)</li>
+                    <li>Acompanhamento de Migração de Sistema — disponível mediante contratação separada (Etapa 4)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===== SUPORTE AO DPO INTERNO ===== -->
+        <div id="escopo-suporte-dpo" style="margin-bottom:3rem;padding-top:2rem;border-top:3px solid var(--s200)">
+            <h3 style="font-family:var(--serif);font-size:1.3rem;color:var(--navy);margin-bottom:.2rem">Suporte ao DPO Interno</h3>
+            <p style="font-size:.85rem;color:var(--blue);font-weight:600;margin-bottom:1rem">R$ 1.880,36/mês</p>
+
+            <div style="background:linear-gradient(135deg,#FFFBEB,#FEF3C7);border:2px solid var(--gold);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:1.5rem">
+                <p style="font-size:.88rem;color:var(--s800);line-height:1.7;text-align:justify">O Suporte ao DPO Interno é um serviço de <strong>orientação técnica</strong> para o Encarregado de Dados designado pela serventia. O objetivo é capacitar o DPO interno a exercer suas funções com segurança — <strong>sem executar as atividades por ele</strong>.</p>
+                <p style="font-size:.88rem;color:var(--s800);line-height:1.7;text-align:justify;margin-top:.5rem">Na prática: o DPO interno recebe orientação, templates e direcionamento para cumprir suas obrigações legais. A Data Secure® orienta — quem executa é o DPO interno. Restrito às obrigações da Lei.</p>
+            </div>
+
+            <div style="background:#ECFDF5;border-left:4px solid var(--emerald);border-radius:8px;padding:1rem 1.25rem;margin-bottom:1rem">
+                <h4 style="font-family:var(--font);font-size:.88rem;font-weight:700;color:#065F46;margin-bottom:.4rem">O que o Suporte ao DPO INCLUI</h4>
+                <ul style="padding-left:1.2rem;font-size:.83rem;color:#047857">
+                    <li style="margin-bottom:.25rem">Orientação técnica sobre as obrigações legais do Encarregado de Dados (LGPD Art. 41)</li>
+                    <li style="margin-bottom:.25rem">Fornecimento de templates de documentos obrigatórios (ROPA, Política de Privacidade, Termos de Consentimento, DPA)</li>
+                    <li style="margin-bottom:.25rem">Direcionamento para resposta a solicitações de titulares de dados</li>
+                    <li style="margin-bottom:.25rem">Orientação para comunicação de incidentes à ANPD e aos titulares</li>
+                    <li style="margin-bottom:.25rem">Esclarecimento de dúvidas sobre aplicação da LGPD no contexto notarial</li>
+                    <li style="margin-bottom:.25rem">Revisão consultiva de documentos elaborados pelo DPO interno</li>
+                    <li>Atendimento via Microsoft Teams e e-mail — 1 reunião mensal de orientação</li>
+                </ul>
+            </div>
+
+            <div style="background:#FEF2F2;border-left:4px solid var(--red);border-radius:8px;padding:1rem 1.25rem">
+                <h4 style="font-family:var(--font);font-size:.88rem;font-weight:700;color:#991B1B;margin-bottom:.4rem">O que o Suporte ao DPO NÃO faz</h4>
+                <ul style="padding-left:1.2rem;font-size:.83rem;color:#7F1D1D">
+                    <li style="margin-bottom:.25rem">Não elabora documentos — entrega templates e orienta o preenchimento</li>
+                    <li style="margin-bottom:.25rem">Não executa as atividades do DPO — apenas orienta o DPO interno</li>
+                    <li style="margin-bottom:.25rem">Não assume a função de Encarregado de Dados perante a ANPD</li>
+                    <li style="margin-bottom:.25rem">Não realiza treinamentos formais para colaboradores</li>
+                    <li style="margin-bottom:.25rem">Não faz auditoria de fornecedores ou monitoramento de TI (escopo da AECD)</li>
+                    <li>Não oferece parecer jurídico — restrito às obrigações técnicas da LGPD</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===== DPO AS A SERVICE ===== -->
+        <div id="escopo-dpo" style="padding-top:2rem;border-top:3px solid var(--s200)">
+            <h3 style="font-family:var(--serif);font-size:1.3rem;color:var(--navy);margin-bottom:.2rem">DPO as a Service (AECD + DPO)</h3>
+            <p style="font-size:.85rem;color:var(--blue);font-weight:600;margin-bottom:1rem">R$ 7.543,09/mês — Fidelidade 12 meses</p>
+
+            <div style="background:linear-gradient(135deg,#FFFBEB,#FEF3C7);border:2px solid var(--gold);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:1.5rem">
+                <p style="font-size:.88rem;color:var(--s800);line-height:1.7;text-align:justify">O DPO as a Service é a opção mais completa: a Data Secure® <strong>assume formalmente a função de Encarregado de Dados (DPO)</strong> da serventia perante a ANPD, além de executar todo o escopo da AECD. Inclui também as Etapas 1 a 4 do projeto.</p>
+                <p style="font-size:.88rem;color:var(--s800);line-height:1.7;text-align:justify;margin-top:.5rem">Na prática: o delegatário não precisa designar um colaborador como DPO nem se preocupar com a gestão de fornecedores de TI. A Data Secure® faz tudo — e documenta tudo.</p>
+            </div>
+
+            <div style="background:#ECFDF5;border-left:4px solid var(--emerald);border-radius:8px;padding:1rem 1.25rem;margin-bottom:1rem">
+                <h4 style="font-family:var(--font);font-size:.88rem;font-weight:700;color:#065F46;margin-bottom:.4rem">O que o DPO as a Service INCLUI</h4>
+                <ul style="padding-left:1.2rem;font-size:.83rem;color:#047857">
+                    <li style="margin-bottom:.25rem"><strong>Todo o escopo da AECD</strong> (4 Eixos de monitoramento contínuo)</li>
+                    <li style="margin-bottom:.25rem"><strong>Etapas 1 a 4 do projeto</strong> (Diagnóstico, Prov. 213, LGPD, Migração)</li>
+                    <li style="margin-bottom:.25rem">Assunção formal da função de Encarregado de Dados perante a ANPD</li>
+                    <li style="margin-bottom:.25rem">Elaboração e manutenção de todos os documentos LGPD (não apenas templates)</li>
+                    <li style="margin-bottom:.25rem">Resposta direta a solicitações de titulares de dados em nome da serventia</li>
+                    <li style="margin-bottom:.25rem">Comunicação de incidentes à ANPD e titulares quando necessário</li>
+                    <li style="margin-bottom:.25rem">Interlocução com a ANPD em nome da serventia</li>
+                    <li style="margin-bottom:.25rem">Treinamento e conscientização dos colaboradores sobre proteção de dados</li>
+                    <li>Relatórios de impacto à proteção de dados (RIPD) quando exigidos</li>
+                </ul>
+            </div>
+
+            <div style="background:#FEF2F2;border-left:4px solid var(--red);border-radius:8px;padding:1rem 1.25rem">
+                <h4 style="font-family:var(--font);font-size:.88rem;font-weight:700;color:#991B1B;margin-bottom:.4rem">O que o DPO as a Service NÃO faz</h4>
+                <ul style="padding-left:1.2rem;font-size:.83rem;color:#7F1D1D">
+                    <li style="margin-bottom:.25rem">Representação judicial da serventia</li>
+                    <li style="margin-bottom:.25rem">Redação jurídica final de contratos — recomenda-se assessoria jurídica própria</li>
+                    <li style="margin-bottom:.25rem">Intervenções técnicas diretas em servidores, bancos de dados ou equipamentos</li>
+                    <li>Execução operacional de rotinas de TI (backup, atualização, configuração)</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p style="margin-bottom:.4rem">&copy; 2026 <strong>Data Secure®</strong> — Riscos, Continuidade e Compliance Digital para Serventias Extrajudiciais</p>
+    <p>Programa Diligência Coletiva é marca registrada da Data Secure® do Brasil.</p>
+</footer>
+
+<script>
+(function(){
+'use strict';
+
+/* === CARRINHO + CONSOLIDADO MENSAL === */
+var ETAPA1 = 3000;
+var MESES = 12;
+var etapasMap = { 2: 12000, 3: 6000 };
+var etapa4 = [
+    { id: 'cart4a', valor: 8000 },
+    { id: 'cart4b', valor: 4000 },
+    { id: 'cart4c', valor: 10000 }
+];
+
+function fmt(v) {
+    return 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function updateAll() {
+    // Total etapas
+    var totalEtapas = ETAPA1;
+    var count = 1;
+    [2, 3].forEach(function(i) {
+        if (document.getElementById('cart' + i).checked) {
+            totalEtapas += etapasMap[i];
+            count++;
+        }
+    });
+    var temEtapa4 = false;
+    etapa4.forEach(function(e) {
+        if (document.getElementById(e.id).checked) {
+            totalEtapas += e.valor;
+            temEtapa4 = true;
+        }
+    });
+    if (temEtapa4) count++;
+    var parcEtapa = totalEtapas / MESES;
+
+    document.getElementById('cartCount').textContent = count + (count === 1 ? ' etapa' : ' etapas');
+    document.getElementById('cartTotal').textContent = fmt(totalEtapas);
+    document.getElementById('cartParcEtapa').textContent = fmt(parcEtapa) + '/m\u00eas';
+
+    // Recorrentes
+    var recorrentes = [
+        { id: 'cartSupDpo', valor: 1880.36, nome: 'Suporte DPO' },
+        { id: 'cartAecd', valor: 3876.72, nome: 'AECD' },
+        { id: 'cartDpo', valor: 7543.09, nome: 'AECD + DPO' }
+    ];
+    var mensalRec = 0;
+    var mensalNomes = [];
+    recorrentes.forEach(function(r) {
+        if (document.getElementById(r.id).checked) {
+            mensalRec += r.valor;
+            mensalNomes.push(r.nome);
+        }
+    });
+
+    document.getElementById('cartMensal').textContent = mensalRec > 0
+        ? fmt(mensalRec) + '/m\u00eas (' + mensalNomes.join(' + ') + ')'
+        : '\u2014';
+
+    // Consolidado
+    var totalMensal = parcEtapa + mensalRec;
+    document.getElementById('consEtapa').textContent = fmt(parcEtapa);
+    document.getElementById('consRecorrente').textContent = mensalRec > 0
+        ? fmt(mensalRec) + ' (' + mensalNomes.join(' + ') + ')'
+        : '\u2014';
+    document.getElementById('consTotal').textContent = fmt(totalMensal) + '/m\u00eas';
+    document.getElementById('consDetalhe').textContent = 'Etapas: ' + fmt(totalEtapas) + ' \u00f7 12 = ' + fmt(parcEtapa) + '/m\u00eas' + (mensalRec > 0 ? ' + ' + mensalNomes.join(' + ') + ': ' + fmt(mensalRec) + '/m\u00eas' : '');
+}
+
+// Event listeners — etapas
+[2, 3].forEach(function(i) {
+    document.getElementById('cart' + i).addEventListener('change', updateAll);
+});
+['cart4a', 'cart4b', 'cart4c'].forEach(function(id) {
+    document.getElementById(id).addEventListener('change', updateAll);
+});
+// Recorrentes — Suporte DPO + AECD juntos OK, AECD+DPO exclui os outros
+document.getElementById('cartDpo').addEventListener('change', function() {
+    if (this.checked) {
+        document.getElementById('cartSupDpo').checked = false;
+        document.getElementById('cartAecd').checked = false;
+    }
+    updateAll();
+});
+document.getElementById('cartSupDpo').addEventListener('change', function() {
+    if (this.checked) document.getElementById('cartDpo').checked = false;
+    updateAll();
+});
+document.getElementById('cartAecd').addEventListener('change', function() {
+    if (this.checked) document.getElementById('cartDpo').checked = false;
+    updateAll();
+});
+updateAll();
+
+/* === STEPS TOGGLE === */
+document.getElementById('toggleSteps').addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var p = document.getElementById('stepsPanel');
+    p.classList.toggle('open');
+    this.innerHTML = p.classList.contains('open') ? '&#9650; Ocultar os 4 passos' : '&#9660; Clique aqui para conhecer os 4 passos';
+});
+document.getElementById('ctaBox').addEventListener('click', function(e) {
+    if (e.target.id !== 'toggleSteps' && !e.target.closest('.steps-cta')) {
+        document.getElementById('toggleSteps').click();
+    }
+});
+
+/* === SCROLL ANIMATIONS === */
+var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('vis'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.anim').forEach(function(el) { obs.observe(el); });
+
+})();
+
+/* === LABORATÓRIO DE GOVERNANÇA === */
+var glossario = {
+    'sgbd': 'Sistema de Gerenciamento de Banco de Dados \u2014 \u00e9 o software que armazena todos os atos e dados da serventia. Se ele parar, a serventia para.',
+    'backup': 'C\u00f3pia de seguran\u00e7a dos dados. Precisa ser testada regularmente. Um backup que nunca foi testado \u00e9 igual a n\u00e3o ter backup.',
+    'nuvem': 'Armazenamento remoto (cloud). Os dados ficam em servidores fora da serventia. Exige contrato com cl\u00e1usulas de seguran\u00e7a e auditoria.',
+    'dpa': 'Data Processing Agreement \u2014 contrato que define como o fornecedor trata os dados pessoais da serventia. Obrigat\u00f3rio pela LGPD.',
+    'sla': 'Service Level Agreement \u2014 acordo de n\u00edvel de servi\u00e7o. Define tempos de resposta, disponibilidade m\u00ednima e penalidades.',
+    'firewall': 'Barreira de prote\u00e7\u00e3o entre a rede da serventia e a internet. Filtra tr\u00e1fego malicioso.',
+    'lgpd': 'Lei Geral de Prote\u00e7\u00e3o de Dados \u2014 lei brasileira que regulamenta o tratamento de dados pessoais. Serventias s\u00e3o controladoras de dados.',
+    'dpo': 'Data Protection Officer / Encarregado de Dados \u2014 pessoa respons\u00e1vel por zelar pela conformidade com a LGPD na serventia.',
+    'ropa': 'Registro de Opera\u00e7\u00f5es de Tratamento de Dados \u2014 documento obrigat\u00f3rio pela LGPD que mapeia todas as atividades com dados pessoais.',
+    'pcn': 'Plano de Continuidade de Neg\u00f3cios \u2014 define como a serventia continua operando em caso de desastre ou incidente grave.',
+    'prd': 'Plano de Recupera\u00e7\u00e3o de Desastres \u2014 procedimentos para restaurar sistemas e dados ap\u00f3s um incidente.',
+    'pri': 'Plano de Resposta a Incidentes \u2014 define quem faz o qu\u00ea, quando e como em caso de incidente de seguran\u00e7a.'
+};
+
+function traduzir() {
+    var inp = document.getElementById('tradutorInput').value.trim().toLowerCase();
+    var r = document.getElementById('tradutorResult');
+    if (!inp) { r.style.display = 'none'; return; }
+    var resp = glossario[inp];
+    r.style.display = 'block';
+    r.innerHTML = resp
+        ? '<strong style="color:var(--gold)">' + inp.toUpperCase() + ':</strong> ' + resp
+        : 'Termo n\u00e3o encontrado na base. Tente: SGBD, backup, nuvem, DPA, SLA, firewall, LGPD, DPO, ROPA, PCN, PRD, PRI.';
+}
+
+var perguntas = [
+    '1. Voc\u00ea sabe dizer, agora, se o backup da sua serventia foi testado nos \u00faltimos 90 dias?',
+    '2. Seu contrato com o fornecedor de SGBD prev\u00ea multa por indisponibilidade?',
+    '3. Se o fornecedor de nuvem encerrar atividades amanh\u00e3, h\u00e1 plano B documentado?',
+    '1. O Encarregado de Dados (DPO) da sua serventia est\u00e1 formalmente designado?',
+    '2. Existe registro documentado de todas as opera\u00e7\u00f5es de tratamento de dados pessoais (ROPA)?',
+    '3. Os colaboradores receberam treinamento em seguran\u00e7a digital nos \u00faltimos 12 meses?',
+    '1. A serventia possui Plano de Continuidade de Neg\u00f3cios (PCN) testado?',
+    '2. Os contratos com fornecedores incluem cl\u00e1usulas de auditoria e SLA?',
+    '3. H\u00e1 evid\u00eancias documentadas de fiscaliza\u00e7\u00e3o ativa dos fornecedores de TI?'
+];
+
+function gerarPerguntas() {
+    var r = document.getElementById('perguntasResult');
+    var start = Math.floor(Math.random() * (perguntas.length / 3)) * 3;
+    r.style.display = 'block';
+    r.innerHTML = perguntas[start] + '<br>' + perguntas[start + 1] + '<br>' + perguntas[start + 2];
+}
+</script>
+</body>
+</html>
